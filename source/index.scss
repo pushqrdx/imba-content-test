@@ -1,0 +1,115 @@
+* {
+    user-select: none;
+    cursor: none;
+
+    &:focus { outline: none !important; }
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+header {
+    background: #CE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     ._content {
+        color: #0008;
+        padding: 10px;
+        font-weight: 800;
+    }
+}
+
+main {
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+    background: linear-gradient(262deg, #4F75bC, #06CECC);
+    background-size: 400% 400%;
+    animation: AnimationName 15s ease infinite;
+    flex-grow: 1;
+}
+
+footer {
+    background: #56F;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 5px;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-bottom: 2px solid grey;
+    background: white;
+    text-align: center;
+    width: 80px;
+}
+
+input {
+    border: 2px solid grey;
+    background: white;
+}
+
+.Layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;    
+    box-shadow: 10px 10px 0 0 #0007;
+    border: 1px solid #0007;
+}
+
+.rotate {
+    transform-origin: center;
+    transform: rotate(0deg);
+    animation: Rotation 2.5s linear infinite;
+}
+
+.full-size {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.30;
+    user-select: none;
+}
+
+.gradient {
+    background: linear-gradient(262deg, #4275bd, #563a9b);
+    background-size: 400% 400%;
+    animation: GradientAnimation 10s ease infinite;
+}
+
+.full-size {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@keyframes Rotation {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg)}
+}
+
+@keyframes GradientAnimation { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
