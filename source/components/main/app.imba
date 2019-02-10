@@ -7,6 +7,7 @@ tag Layout
 				<content[:header]>
 			<main>
 				<h1> "KEEP CLICKIN\'"
+				<content>
 			<footer>	
 				<content[:footer]>
 
@@ -22,3 +23,4 @@ export tag App
 				else
 					<h1 for='header'> '😂'
 					<h1 for='footer'> '🤨'
+				<h1> '🌴'
